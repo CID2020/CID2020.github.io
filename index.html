@@ -1,177 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" href="./style.css">
+<!-- START NAV -->
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Leonard Portfolio Website</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
+<nav id="navbar" class="nav">
+  <ul class="nav-list">
+    <li>
+      <a href="#welcome-section">Über mich</a>
+    </li>
+    <li>
+      <a href="#projects">Projekte</a>
+    </li>
+    <li>
+      <a href="#contact">Kontakt</a>
+    </li>
+  </ul>
+</nav>
 
-<body>
-	<header>
-		<div class="logo">
-			<img src="img/devjane.png" alt="">
-		</div>
-		<button class="nav-toggle" aria-label="toggle navigation">
-			<span class="hamburger"></span>
-		</button>
-		<nav class="nav">
-			<ul class="nav__list">
-				<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-				<li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-				<li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-				<li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-			</ul>
-		</nav>
-	</header>
+<!-- END NAV -->
 
-	<!-- Introduction -->
-	<section class="intro" id="home">
-		<h1 class="section__title section__title--intro">
-			Hello, I am <strong>Leonard</strong>
-		</h1>
-		<p class="section__subtitle section__subtitle--intro">front-end dev</p>
-		<img src="img/dev-jane-01.jpg" alt="a picture of Jane Smith smiling" class="intro__img">
-	</section>
+<!-- START WELCOME SECTION -->
 
-	<!-- My services -->
-	<section class="my-services" id="services">
-		<h2 class="section__title section__title--services">What I do</h2>
-		<div class="services">
-			<div class="service">
-				<h3>Design + Development</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-					magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-			</div> <!-- / service -->
+<section id="welcome-section" class="welcome-section">
+  <h1>Hallo, Ich bin Menglin Li</h1>
+  <p>Ein (zukünftiger) Data Scientist</p>
+</section>
 
-			<div class="service">
-				<h3>E-Commerce</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-					magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-			</div> <!-- / service -->
+<!-- END WELCOME SECTION -->
 
-			<div class="service">
-				<h3>WordPress</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-					magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-			</div> <!-- / service -->
-		</div> <!-- / services -->
+<!-- START PROJECTS SECTION -->
 
-		<a href="#work" class="btn">My Work</a>
-	</section>
+<section id="projects" class="projects-section">
+  <h2 class="projects-section-header">Das sind meine Projekte</h2>
 
+  <div class="projects-grid">
+    <a
+      href="https://github.com/CID2020/trigonometry"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://github.com/CID2020/CID2020.github.io/blob/master/img1/trigonometrie.png?raw=true"
+        alt="project"
+      />
+      <p class="project-title">
+        <!-- <span class="code">&lt;</span> -->
+        Trigonometrie Aufgaben App
+        <!-- <span class="code">&#47;&gt;</span> -->
+      </p>
+    </a>
+    <a
+      href="https://github.com/CID2020/construction"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://github.com/CID2020/CID2020.github.io/blob/master/img1/kegelschnitt.png?raw=true"
+        alt="project"
+      />
+      <p class="project-title">
+      	Kegelschnitt Konstruktion Anweisung
+      </p>
+    </a>
+  </div>
 
-	<!-- About me -->
-	<section class="about-me" id="about">
-		<h2 class="section__title section__title--about">Who I am</h2>
-		<p class="section__subtitle section__subtitle--about">Designer & developer based out of NYC</p>
+  <a
+    href="https://github.com/CID2020/"
+    class="btn btn-show-all"
+    target="_blank"
+    >Show all<i class="fas fa-chevron-right"></i
+  ></a>
+</section>
 
-		<div class="about-me__body">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
-		</div>
+<!-- END PROJECTS SECTION -->
 
-		<img src="img/dev-jane-02.jpg" alt="Jane leaning against a bus" class="about-me__img">
-	</section>
+<!-- START CONTACT SECTION -->
 
-	<!-- My Work -->
-	<section class="my-work" id="work">
-		<h2 class="section__title section__title--work">My work</h2>
-		<p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+<section id="contact" class="contact-section">
+  <div class="contact-section-header">
+    <h2>Lass uns zusammenarbeiten</h2>
+    <p></p>
+  </div>
+  <div class="contact-links">
+    <a
+      id="profile-link"
+      href="https://github.com/CID2020"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-github"></i> GitHub</a
+    >
+    <a href="limlleonard@gmail.com" class="btn contact-details"
+      ><i class="fas fa-at"></i> E-Mail</a
+    >
+    <a href="tel:0176 6711 5852" class="btn contact-details"
+      ><i class="fas fa-mobile-alt"></i> Ruf mich an</a
+    >
+  </div>
+</section>
 
-		<div class="portfolio">
-			<!-- Portfolio item 01 -->
-			<a href="portfolio-item.html" class="portfolio__item">
-				<img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
-			</a>
+<!-- END CONTACT SECTION -->
 
-			<!-- Portfolio item 02 -->
-			<a href="portfolio-item.html" class="portfolio__item">
-				<img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
-			</a>
+<!-- START FOOTER SECTION -->
 
-			<!-- Portfolio item 03 -->
-			<a href="portfolio-item.html" class="portfolio__item">
-				<img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
-			</a>
+<footer>
+  <p>
+  	Zöge nicht, mich zu kontaktieren.
+  </p>
+  <p>
+    <!-- &copy; Created for
+    <a href="https://www.freecodecamp.com/" target="_blank"
+      >freeCodeCamp <i class="fab fa-free-code-camp"></i
+    ></a> -->
+  </p>
+</footer>
 
-			<!-- Portfolio item 04 -->
-			<a href="portfolio-item.html" class="portfolio__item">
-				<img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
-			</a>
-
-			<!-- Portfolio item 05 -->
-			<a href="portfolio-item.html" class="portfolio__item">
-				<img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
-			</a>
-
-			<!-- Portfolio item 06 -->
-			<a href="portfolio-item.html" class="portfolio__item">
-				<img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
-			</a>
-
-			<!-- Portfolio item 07 -->
-			<a href="portfolio-item.html" class="portfolio__item">
-				<img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
-			</a>
-
-			<!-- Portfolio item 08 -->
-			<a href="#" class="portfolio__item">
-				<img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
-			</a>
-
-			<!-- Portfolio item 09 -->
-			<a href="#" class="portfolio__item">
-				<img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
-			</a>
-
-			<!-- Portfolio item 0 0-->
-			<a href="#" class="portfolio__item">
-				<img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
-			</a>
-		</div>
-	</section>
-
-
-	<!-- Footer -->
-	<footer class="footer">
-		<!-- replace with your own email address -->
-		<a href="mailto:hello@jane.dev" class="footer__link">hello@jane.dev</a>
-		<ul class="social-list">
-			<li class="social-list__item">
-				<a class="social-list__link" href="https://codepen.io">
-					<i class="fab fa-codepen"></i>
-				</a>
-			</li>
-			<li class="social-list__item">
-				<a class="social-list__link" href="http://dribbble.com">
-					<i class="fab fa-dribbble"></i>
-				</a>
-			</li>
-			<li class="social-list__item">
-				<a class="social-list__link" href="https://twitter.com">
-					<i class="fab fa-twitter"></i>
-				</a>
-			</li>
-			<li class="social-list__item">
-				<a class="social-list__link" href="https://github.com">
-					<i class="fab fa-github"></i>
-				</a>
-			</li>
-		</ul>
-	</footer>
-
-
-	<script src="js/index.js"></script>
-
-</body>
-
-</html>
+<!-- END FOOTER SECTION -->

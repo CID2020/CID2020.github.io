@@ -1,4 +1,3 @@
-/* Custom properties/variables  */
 :root {
   --main-white: #f0f0f0;
   --main-red: #b931be;
@@ -123,7 +122,8 @@ img {
 }
 .welcome-image {
   height: calc(60% - 6.8rem);
-  width: 100%;
+  width: 70%;
+  /*left: -5%;*/
   object-fit: scale-down;
 }
 #ywm{
